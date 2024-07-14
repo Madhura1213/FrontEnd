@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Currency Converter</h2>
+    Indian Rupees : <input type="text" id="rupee" oninput="covertToDollar()">
+    <br><br>    
+    US Dollars : <input type="text" id="dollar" oninput="convertToRupees()" >
+    <script>
+        function covertToDollar(){
+            let rs;
+            rs= + rupee.value;
+            
+            dollar.value= rs/100;
+        }
+
+        const convertToRupees= ()=>{
+            let dl;
+            dl= +dollar.value;
+            rupee.value= dl*100;
+        }
+
+
+    </script>
+
+</body>
+</html>
