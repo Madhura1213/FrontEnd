@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>On Input Celcius to Fahrenheit Converter</h2>
+    Celcius: <input type="text" id="cel" oninput="convert()">
+    <br>
+    <br>
+    Fahrenheit: <input type="text" id="fah">
+
+    <script>
+        function convert(){
+            let c,f;
+            c =+ cel.value;
+            fah.value = (c*9/5)+32;
+        }
+    </script>
+</body>
+</html>
