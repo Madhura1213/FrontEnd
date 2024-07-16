@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Simple Interest Calculator</h2>
+    Principle : <input type="text" id="p">
+    <br><br>
+    Rate : <input type="text" id="r">
+    <br><br>
+    No Of Years : <input type="text" id="n">
+    <br><br>
+    <button onclick="siCalculator()">Calculate</button>
+
+    <script>
+        function siCalculator(){
+            let pr,ny,rt,result;
+            pr= +p.value;
+            ny= +n.value;
+            rt= +r.value;
+            result= (pr*ny*rt)/100;
+           document.writeln("SI : " + result);
+        }
+
+    </script>
+
+</body>
+</html>
